@@ -1,0 +1,47 @@
+.contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483800;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+}
+
+.contact-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  background: rgba(7, 17, 33, 0.45);
+  cursor: pointer;
+}
+
+.contact-modal__panel {
+  position: relative;
+  width: min(100%, 448px);
+  max-height: calc(100vh - 56px);
+  overflow: auto;
+}
+
+.contact-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.contact-modal__card {
+  overflow: hidden;
+}
+
+.contact-modal__card .ad-sidebar__form {
+  padding-top: 48px;
+}
